@@ -1,0 +1,66 @@
+
+#title, #nav-group, .nav-item, #login-group, .login-item{ display: inline-block;}
+.nav-item:hover, .login-item:hover{background: #09b;}
+
+
+nav, #main{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+nav{
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+#title{
+  border-left: 1rem solid #09b;
+  background: #08a;
+  font-size: 1.5rem;
+  font-family: courier;
+  padding: .5rem;
+  color: #ad2;
+}
+
+#nav-group{
+  margin-left: 3rem;
+}
+.nav-item{
+  color: #333;
+}
+
+#login-group{
+  margin-left: 3rem;
+}
+.login-item{
+  color: #333;
+}
+
+.nav-item, .login-item{
+  padding: .5rem;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 100;
+  border-bottom: 1px solid #ccc;
+}
+
+#main{
+}
+
+#name-pass{
+  display: inline-block;
+  display: none;
+  border: 1px solid #ddd;
+  background: #eee;
+}
+
+.form-item{
+  margin: .8rem;
+}
+.form-item input{
+  font-size: 1.2rem;
+  border: none;
+}
+.form-item:last-child{
+  margin-top: 0;
+}
+

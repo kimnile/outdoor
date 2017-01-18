@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+
+<title>bizep</title>
+
+<script src="js/jquery310.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $("body").append("yo hey");
+
+		myajax("/some/place", {}, datareturn);
+  });
+
+
+	function datareturn(thedata){
+    $("body").append("<div>some return stuff</div><div>" + thedata + "</div>")
+	}
+
+
+function myajax(functionName, data, success){
+	$.ajax({
+		type: 'POST',
+		url: '/php/index.php' + functionName,
+		data: data,
+		success: success
+	});
+	return false;
+}
+
+</script>
+
+</head>
+
+<body>
+</body>
+
+</html>

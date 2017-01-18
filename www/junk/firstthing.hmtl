@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <head>
+    <script type="text/javascript" src="js/jquery310.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#login-button").click(loginclick);
+      });
+
+      function loginclick(){
+        $("#login-group").css("display", "none");
+        $("#name-pass").css("display", "inline-block");
+        //$("#name-pass").show();
+      }
+    </script>
+    <style>
+      #title, #nav-group, .nav-item, #login-group, .login-item{ display: inline-block;}
+      .nav-item:hover, .login-item:hover{background: #09b;}
+
+
+      nav, #main{
+        margin-left: 3rem;
+        margin-right: 3rem;
+      }
+
+      nav{
+        display: inline-block;
+        margin-bottom: 2rem;
+      }
+      #title{
+        border-left: 1rem solid #09b;
+        background: #08a;
+        font-size: 1.5rem;
+        font-family: courier;
+        padding: .5rem;
+        color: #ad2;
+      }
+
+      #nav-group{
+        margin-left: 3rem;
+      }
+      .nav-item{
+        color: #333;
+      }
+
+      #login-group{
+        margin-left: 3rem;
+      }
+      .login-item{
+        color: #333;
+      }
+
+      .nav-item, .login-item{
+        padding: .5rem;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        font-weight: 100;
+        border-bottom: 1px solid #ccc;
+      }
+
+      #main{
+      }
+
+      #name-pass{
+        display: inline-block;
+        display: none;
+        border: 1px solid #ddd;
+        background: #eee;
+      }
+
+      .form-item{
+        margin: .8rem;
+      }
+      .form-item input{
+        font-size: 1.2rem;
+        border: none;
+      }
+      .form-item:last-child{
+        margin-top: 0;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <nav>
+
+      <div id='title'>
+        <div>business</div>
+        <div>experience</div>
+        <div>awesomeness</div>
+      </div>
+      
+      <div id=nav-group>
+        <div class='nav-item'>consult</div>
+        <div class='nav-item'>knowledge</div>
+        <div class='nav-item'>advance</div>
+      </div>
+
+      <div id=login-group>
+        <div class='login-item' id='login-button'>login</div>
+        <div class='login-item'>sign up</div>
+      </div>
+
+      <div id='name-pass'>
+        <form>
+          <div class='form-item'><input placeholder='username' name='username' /></div>
+          <div class='form-item'><input placeholder='password' type='password' /></div>
+        </form>
+      </div>
+
+    </nav>
+    
+
+
+    <div id='main'>some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description some sort of description </div>
+  </body>
+
+</html>
