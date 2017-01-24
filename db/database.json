@@ -1,9 +1,18 @@
 {
+
+/*
     "dev": {
         "driver": "mysql",
         "user": "bizept",
         "password": "garlic onion bean bean",
         "database": "bizept",
         "multipleStatements": true
+    }
+*/
+
+    "mongo":{
+        "driver": "mongodb",
+        "database": "test_db",
+        "host": "localhost"
     }
 }
